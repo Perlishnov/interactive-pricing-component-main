@@ -14,15 +14,12 @@
 
     <title>Frontend Mentor | Interactive pricing component</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
       rel="stylesheet"
     />
-
-  
   </head>
   <body>
     <section class="pricing-component">
@@ -35,16 +32,18 @@
         </div>
         <div class="inner-part">
           <div class="price-calculator">
-            <div class="page-views"><span id="page-views-number"></span><span>K Pageviews</span></div>
+            <div class="page-views">
+              <span id="page-views-number">K</span><span> Pageviews</span>
+            </div>
             <div class="pricing">
               &dollar;<span class="price" id="price"></span
-              ><span class="quota-type" id="quota-type">/month</span>
+              >.00<span class="quota-type" id="quota-type">/month</span>
             </div>
           </div>
           <div class="range-slider">
             <input
               type="range"
-              name="input-slider"
+              name="input-slide"
               id="input-slider"
               min="8"
               max="36"
@@ -59,7 +58,10 @@
             ></label>
             <span>
               <span> Yearly Billing</span>
-              <span class="discount"><span class="discount-percent"></span><span>25% discount</span></span>
+              <span class="discount"
+                ><span class="discount-percent"></span
+                ><span>25% discount</span></span
+              >
             </span>
           </div>
           <div class="bottom-section">
@@ -75,7 +77,6 @@
         </div>
       </div>
     </section>
-
-    
   </body>
+  <script src="script.js"></script>
 </html>

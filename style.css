@@ -115,17 +115,16 @@ input[type="range"]::-webkit-slider-thumb {
   background-position: center;
   box-shadow: 1px 10px 30px var(--Strong-Cyan-Slider-Backround);
   cursor: pointer;
-  -webkit-appearance: none;
 }
 input[type="range"]::-webkit-slider-runnable-track,
 input::-moz-range-track {
   background-color: var(--Light-Grayish-Blue-Empty-Slider-Bar);
-  padding: 0.2rem;
+  padding: 0.1rem;
   border-radius: 15px;
 }
 input::-moz-range-progress {
   background-color: var(--Strong-Cyan-Slider-Backround);
-  padding: 0.2rem;
+  padding: 0.1rem;
   border-radius: 15px;
 }
 
