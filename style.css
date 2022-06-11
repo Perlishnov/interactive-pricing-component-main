@@ -105,7 +105,7 @@ body {
 }
 /* Styles the range input */
 input::-moz-range-thumb,
-input::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   border: none;
   border-radius: 50%;
   background-color: var(--Strong-Cyan-Slider-Backround);
@@ -113,11 +113,11 @@ input::-webkit-slider-thumb {
   padding: 0.5rem;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-appearance: none;
   box-shadow: 1px 10px 30px var(--Strong-Cyan-Slider-Backround);
   cursor: pointer;
+  -webkit-appearance: none;
 }
-input::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-runnable-track,
 input::-moz-range-track {
   background-color: var(--Light-Grayish-Blue-Empty-Slider-Bar);
   padding: 0.2rem;
