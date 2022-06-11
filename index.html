@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+  
+  </head>
+  <body>
+    <section class="pricing-component">
+      <div class="pricing-app-container">
+        <div class="title-container">
+          <h1 class="heading">Simple, traffic-based pricing</h1>
+          <h4 class="subtitle">
+            Sign-up for our 30-day trial. No credit card required
+          </h4>
+        </div>
+        <div class="inner-part">
+          <div class="price-calculator">
+            <div class="page-views"><span id="page-views-number"></span><span>K Pageviews</span></div>
+            <div class="pricing">
+              &dollar;<span class="price" id="price"></span
+              ><span class="quota-type" id="quota-type">/month</span>
+            </div>
+          </div>
+          <div class="range-slider">
+            <input
+              type="range"
+              name="input-slider"
+              id="input-slider"
+              min="8"
+              max="36"
+              step="4"
+            />
+          </div>
+          <div class="toggle-component">
+            <span>Monthly Billing</span>
+            <label class="toggle" for="input-toggle">
+              <input type="checkbox" name="" id="input-toggle" />
+              <span class="slider round"></span
+            ></label>
+            <span>
+              <span> Yearly Billing</span>
+              <span class="discount"><span class="discount-percent"></span><span>25% discount</span></span>
+            </span>
+          </div>
+          <div class="bottom-section">
+            <div>
+              <ul>
+                <li>Unlimited websites</li>
+                <li>100% data ownership</li>
+                <li>Email reports</li>
+              </ul>
+            </div>
+            <div><button>Start my trial</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </body>
+</html>
