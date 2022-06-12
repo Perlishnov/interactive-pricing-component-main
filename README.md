@@ -7,6 +7,7 @@ We had to build a pricing component like the following:
 
 
 My final result looks like this:
+![final result](./FinalResult.jpg)
 
 
 I learned and practiced a lot of new things like:
