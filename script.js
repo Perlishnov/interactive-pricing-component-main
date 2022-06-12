@@ -28,10 +28,18 @@ inputSlider.addEventListener("change", () => {
   if (inputSlider.value == "36") {
     pageViewsNumber.textContent = pageviews[4];
   }
+  toggleBtn.checked = false;
 });
 
-// toggleBtn.addEventListener("click", () => {
-//   if (toggleBtn.checked) {
-//     price.textContent = price.textContent;
-//   }
-// });
+toggleBtn.addEventListener("click", () => {
+  if (toggleBtn.checked) {
+    var pastClacPrice = price.textContent;
+    price.textContent =
+      parseInt(price.textContent) * 12 - parseInt(price.textContent) * 0.25;
+    quotaType.textContent = "/year";
+  } else {
+    price.textContent =
+      parseInt(price.textContent) / 12 - parseInt(price.textContent) / 0.25;
+    quotaType.textContent = "/month";
+  }
+});
