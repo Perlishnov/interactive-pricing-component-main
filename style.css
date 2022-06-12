@@ -119,12 +119,12 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-webkit-slider-runnable-track,
 input::-moz-range-track {
   background-color: var(--Light-Grayish-Blue-Empty-Slider-Bar);
-  padding: 0.1rem;
+  padding: 0.1 rem;
   border-radius: 15px;
 }
 input::-moz-range-progress {
   background-color: var(--Strong-Cyan-Slider-Backround);
-  padding: 0.1rem;
+  padding: 0.1 rem;
   border-radius: 15px;
 }
 

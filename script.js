@@ -11,7 +11,6 @@ const toggleBtn = document.getElementById("input-toggle");
 const pageviews = ["10K", "50K", "100K", "500K", "1M"];
 
 inputSlider.addEventListener("change", () => {
-  console.log(inputSlider.value);
   price.textContent = inputSlider.value;
   if (inputSlider.value == "8") {
     pageViewsNumber.textContent = pageviews[0];
@@ -33,13 +32,12 @@ inputSlider.addEventListener("change", () => {
 
 toggleBtn.addEventListener("click", () => {
   if (toggleBtn.checked) {
-    var pastClacPrice = price.textContent;
+    sessionStorage.setItem("oldValue", price.textContent);
     price.textContent =
       parseInt(price.textContent) * 12 - parseInt(price.textContent) * 0.25;
     quotaType.textContent = "/year";
   } else {
-    price.textContent =
-      parseInt(price.textContent) / 12 - parseInt(price.textContent) / 0.25;
+    price.textContent = sessionStorage.getItem("oldValue");
     quotaType.textContent = "/month";
   }
 });
